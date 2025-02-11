@@ -2,3 +2,5 @@ data
 output
 test
 iNEXT_output
+iNEXT_input
+.mypy_cache
