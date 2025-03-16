@@ -4,3 +4,7 @@ test
 iNEXT_output
 iNEXT_input
 .mypy_cache
+grids
+maps
+figures
+figs_for_submission
