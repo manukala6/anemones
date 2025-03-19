@@ -1,3 +1,5 @@
+# Script to transform RData output to CSV
+
 load("iNEXT_output//do_par_200_named.Rdata")
 
 result_df <- data.frame(
@@ -13,3 +15,6 @@ result_df <- data.frame(
 SCs <- c(do_par_named$`0_17`$iNextEst$SC)
 result_df$SCs <- sapply(result_df$SCs, function(x) paste(x, collapse = ";"))
 write.csv(result_df, "200km_SC.csv", row.names=FALSE)
+write.csv(result_df, "400km_SC.csv", row.names=FALSE)
+write.csv(result_df, "600km_SC.csv", row.names=FALSE)
+write.csv(result_df, "800km_SC.csv", row.names=FALSE)
